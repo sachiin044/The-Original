@@ -68,3 +68,18 @@ class PullRequestChatRequest(BaseModel):
     message: str
     chat_id: str | None = None
     context: dict | None = None
+
+
+class WorkflowChatRequest(BaseModel):
+    repo_id: str
+    workflow_id: str | None = None
+    run_id: str | None = None
+    question: str
+    chat_id: str | None = None
+    include_logs: bool = False
+
+
+class WorkflowChatResponse(BaseModel):
+    answer: str
+    sources: list[str]
+    metadata: dict

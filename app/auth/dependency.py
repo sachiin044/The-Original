@@ -24,6 +24,14 @@ from fastapi.security import HTTPAuthorizationCredentials
 from fastapi import Request, Security
 from fastapi.security import HTTPAuthorizationCredentials
 
+class RequireWorkflowChatScopes:
+    def __call__(self, request: Request):
+        return verify_api_key(
+            request=request,
+            required_scopes=["workflow:chat"],
+        )
+
+
 class RequireChatScopes:
     def __call__(
         self,
