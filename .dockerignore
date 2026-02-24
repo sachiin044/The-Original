@@ -1,0 +1,109 @@
+# =============================
+# Python cache / compiled
+# =============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+.mypy_cache/
+
+# =============================
+# Virtual environments
+# =============================
+venv/
+env/
+.venv/
+
+# =============================
+# Environment & secrets
+# =============================
+.env
+.env.*
+*.key
+*.pem
+
+# =============================
+# Git & Dev Tools
+# =============================
+.git
+.gitignore
+.devcontainer/
+
+# =============================
+# Tests
+# =============================
+tests/
+
+# =============================
+# Documentation & Dev Rules
+# =============================
+docs/
+File Tree.md
+Features.txt
+GSD-STYLE.md
+PROJECT_RULES.md
+
+# =============================
+# Scripts (dev utilities)
+# =============================
+scripts/
+
+# =============================
+# IDE files
+# =============================
+.vscode/
+.idea/
+
+# =============================
+# OS files
+# =============================
+.DS_Store
+Thumbs.db
+
+# =============================
+# Logs
+# =============================
+*.log
+logs/
+
+# =============================
+# GSD & Methodology
+# =============================
+.agent/
+.gemini/
+.gsd/
+adapters/
+model_capabilities.yaml
+SPEC.md
+ROADMAP.md
+STATE.md
+ARCHITECTURE.md
+STACK.md
+SUMMARY.md
+
+# =============================
+# Runtime & Misc
+# =============================
+repos/
+generate_key.py
+requirements_clean.txt
+streamlit_app.py
+
+# =============================
+# Temporary debug files
+# =============================
+debug_imports.py
+reproduce_issue.py
+check_langchain.py
+
+venv
+__pycache__
+*.pyc
+.git
+.gitignore
+.env
+tests
+docs
+*.md
+*.log
