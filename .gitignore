@@ -1,0 +1,34 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Runtime / cloned repos
+repos/
+
+# Virtual environment
+.venv/
+
+# GSD Methodology / Agent files
+.agent/
+.gemini/
+.gsd/
+SPEC.md
+ROADMAP.md
+STATE.md
+ARCHITECTURE.md
+STACK.md
+SUMMARY.md
+
+# Python distribution / testing
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log

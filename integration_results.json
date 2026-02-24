@@ -1,0 +1,1782 @@
+[
+    {
+        "method": "GET",
+        "endpoint": "/health",
+        "status": 200,
+        "time_ms": 227.8,
+        "response": {
+            "status": "ok",
+            "service": "running"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/api-keys",
+        "status": 200,
+        "time_ms": 357.05,
+        "response": {
+            "key_id": "fb7b2870-e1d5-4bef-8e45-c2556a3a575b",
+            "api_key": "rl_live_f92a14e72fbe921a6a74f34aebe1f6618b6a99a76b5561a5",
+            "created_at": "2026-02-22T07:26:33.130443"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/repos/register",
+        "status": 200,
+        "time_ms": 315.78,
+        "response": {
+            "repo_id": "3c90af76cbde0363",
+            "status": "already_registered"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/repos/3c90af76cbde0363/index",
+        "status": 200,
+        "time_ms": 333.64,
+        "response": {
+            "index_id": "idx_3c90af76cbde0363",
+            "status": "started"
+        },
+        "error": null
+    },
+    {
+        "method": "GET",
+        "endpoint": "/repos/3c90af76cbde0363/status",
+        "status": 200,
+        "time_ms": 307.97,
+        "response": {
+            "repo_id": "3c90af76cbde0363",
+            "status": "indexed",
+            "last_indexed_at": "2026-02-22T07:25:52.373025+00:00"
+        },
+        "error": null
+    },
+    {
+        "method": "GET",
+        "endpoint": "/repos/3c90af76cbde0363/tree",
+        "status": 200,
+        "time_ms": 353.5,
+        "response": {
+            "repo_id": "3c90af76cbde0363",
+            "tree": [
+                {
+                    "path": ".windsurfrules",
+                    "type": "file"
+                },
+                {
+                    "path": "package-lock.json",
+                    "type": "file"
+                },
+                {
+                    "path": "AGENTS.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".mcp.json",
+                    "type": "file"
+                },
+                {
+                    "path": ".cursorrules",
+                    "type": "file"
+                },
+                {
+                    "path": "CLAUDE.md",
+                    "type": "file"
+                },
+                {
+                    "path": "LICENSE",
+                    "type": "file"
+                },
+                {
+                    "path": "README.md",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/run_eval.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/.env.example",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/pyproject.toml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/__init__.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/README.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/settings.local.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/package-lock.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/.npmignore",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/tsconfig.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/package.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/README.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".sisyphus/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/agents/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/agents/gitnexus_agent.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/agents/__init__.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/bridge/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/bridge/gitnexus_tools.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/bridge/mcp_bridge.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/bridge/__init__.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/prompts/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/prompts/system_native.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/prompts/system_native_augment.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/prompts/instance_native_augment.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/prompts/instance_native.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/prompts/system_baseline.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/prompts/instance_baseline.jinja",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/package-lock.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/vite.config.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/tsconfig.node.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/tsconfig.app.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/tsconfig.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/package.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/vercel.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/index.html",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/analysis/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/analysis/analyze_results.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/analysis/__init__.py",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/skills/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/hooks/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/skills/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/skills/debugging.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/skills/refactoring.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/skills/exploring.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/skills/impact-analysis.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/vendor/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".sisyphus/drafts/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".sisyphus/drafts/noodlbox-comparison.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".sisyphus/drafts/gitnexus-brainstorming.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/api/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/api/proxy.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/vite-env.d.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/index.css",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/App.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/main.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/cli/analyze.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/serve.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/eval-server.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/setup.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/clean.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/status.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/wiki.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/tool.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/list.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/ai-context.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/mcp.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/claude-hooks.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/cli/augment.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/lib/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/lib/utils.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/mcp/tools.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/staleness.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/server.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/resources.ts",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/worktrees/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/environments/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/environments/gitnexus_docker.py",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/environments/__init__.py",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/configs/modes/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/configs/modes/baseline.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/modes/native.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/modes/native_augment.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/types/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/types/pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/",
+                    "type": "dir"
+                },
+                {
+                    "path": "eval/configs/models/minimax-2.5.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/glm-5.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/claude-opus.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/glm-4.7.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/claude-haiku.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "eval/configs/models/claude-sonnet.yaml",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-test-setup/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/config/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/config/ignore-service.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/config/supported-languages.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/server/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/server/api.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/lib/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/lib/mermaid-generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/lib/graph-adapter.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/lib/utils.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/lib/constants.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/storage/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/storage/git.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/storage/repo-manager.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/hooks/claude/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/hooks/claude/session-start.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/hooks/claude/pre-tool-use.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/hooks/claude/gitnexus-hook.cjs",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/core/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/mcp/core/embedder.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/core/kuzu-adapter.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/hooks/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/hooks/useSigma.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/hooks/useAppState.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/hooks/useSettings.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/types/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/types/kuzu-wasm.d.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/types/pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/kuzu/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/kuzu/schema.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/kuzu/csv-generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/kuzu/kuzu-adapter.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/html-viewer.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/prompts.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/graph-queries.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/wiki/llm-client.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/mcp/local/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/mcp/local/local-backend.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/vendor/leiden/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/vendor/leiden/utils.cjs",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/vendor/leiden/index.cjs",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/config/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/config/ignore-service.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/config/supported-languages.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/vendor/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/graph/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/graph/types.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/graph/graph.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/kuzu-wasm.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/tree-sitter.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/workers/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/workers/ingestion.worker.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/search/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/search/bm25-index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/search/hybrid-search.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/tools.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/context-builder.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/types.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/agent.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/llm/settings-service.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/services/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/services/zip.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/services/git-clone.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/c/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/c/tree-sitter-c.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/kuzu/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/kuzu/schema.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/kuzu/csv-generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/kuzu/kuzu-adapter.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/go/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/go/tree-sitter-go.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/components/MermaidDiagram.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/ProcessFlowModal.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/LoadingOverlay.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/EmbeddingStatus.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/GraphCanvas.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/CodeReferencesPanel.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/QueryFAB.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/ToolCallCard.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/ProcessesPanel.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/DropZone.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/Header.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/FileTreePanel.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/WebGPUFallbackDialog.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/RightPanel.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/StatusBar.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/MarkdownRenderer.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/components/SettingsPanel.tsx",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/graph/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/graph/types.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/graph/graph.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/ast-cache.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/tree-sitter-queries.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/call-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/cluster-enricher.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/structure-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/heritage-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/filesystem-walker.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/utils.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/symbol-table.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/community-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/framework-detection.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/parsing-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/process-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/entry-point-scoring.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/import-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/session-start.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/hooks.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/pre-tool-use.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/gitnexus-hook.js",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/hooks/session-start.js",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/cpp/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/cpp/tree-sitter-cpp.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/search/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/search/bm25-index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/search/index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/search/hybrid-search.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/embedder.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/types.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/embedding-pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/embeddings/text-generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/java/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/java/tree-sitter-java.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/rust/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/rust/tree-sitter-rust.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/tree-sitter/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/tree-sitter/parser-loader.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/vendor/leiden/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/vendor/leiden/index.d.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/vendor/leiden/utils.js",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/vendor/leiden/index.js",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/augmentation/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/augmentation/engine.ts",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/worktrees/sweet-faraday/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/csharp/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/csharp/tree-sitter-csharp.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/python/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/python/tree-sitter-python.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/ast-cache.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/tree-sitter-queries.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/call-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/cluster-enricher.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/structure-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/heritage-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/utils.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/symbol-table.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/community-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/framework-detection.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/parsing-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/process-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/entry-point-scoring.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/ingestion/import-processor.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/embedder.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/types.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/index.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/embedding-pipeline.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/embeddings/text-generator.ts",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/debugging/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/debugging/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/exploring/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/exploring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/hooks/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/hooks/augment-shell.sh",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/hooks/hooks.json",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/src/core/tree-sitter/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/src/core/tree-sitter/parser-loader.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/refactoring/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/refactoring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/javascript/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/javascript/tree-sitter-javascript.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/typescript/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/typescript/tree-sitter-tsx.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-web/public/wasm/typescript/tree-sitter-typescript.wasm",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/workers/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/workers/worker-pool.ts",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus/src/core/ingestion/workers/parse-worker.ts",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/worktrees/quirky-stonebraker/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/.claude-plugin/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/.claude-plugin/plugin.json",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/impact-analysis/",
+                    "type": "dir"
+                },
+                {
+                    "path": ".claude/skills/gitnexus/impact-analysis/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": ".claude/worktrees/determined-hofstadter/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/debugging/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/debugging/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/exploring/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/exploring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/refactoring/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/refactoring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/impact-analysis/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-claude-plugin/skills/impact-analysis/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-debugging/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-debugging/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-exploring/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-exploring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-refactoring/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-refactoring/SKILL.md",
+                    "type": "file"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-impact-analysis/",
+                    "type": "dir"
+                },
+                {
+                    "path": "gitnexus-cursor-integration/skills/gitnexus-impact-analysis/SKILL.md",
+                    "type": "file"
+                }
+            ]
+        },
+        "error": null
+    },
+    {
+        "method": "GET",
+        "endpoint": "/repos/3c90af76cbde0363/files?path=README.md",
+        "status": 200,
+        "time_ms": 328.28,
+        "response": {
+            "repo_id": "3c90af76cbde0363",
+            "path": "README.md",
+            "content": "# GitNexus\n\n**Building git for agent context.**\n\nIndexes any codebase into a knowledge graph \u2014 every dependency, call chain, cluster, and execution flow \u2014 then exposes it through smart tools so AI agents never miss code.\n\n[![npm version](https://img.shields.io/npm/v/gitnexus.svg)](https://www.npmjs.com/package/gitnexus)\n[![License: PolyForm Noncommercial](https://img.shields.io/badge/License-PolyForm%20Noncommercial-blue.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)\n\n\n\nhttps://github.com/user-attachments/assets/172685ba-8e54-4ea7-9ad1-e31a3398da72\n\n\n\n> *Like DeepWiki, but deeper.* DeepWiki helps you *understand* code. GitNexus lets you *analyze* it \u2014 because a knowledge graph tracks every relationship, not just descriptions.\n\n**TL;DR:** The **Web UI** is a quick way to chat with any repo. The **CLI + MCP** is how you make your AI agent actually reliable \u2014 it gives Cursor, Claude Code, and friends a deep architectural view of your codebase so they stop missing dependencies, breaking call chains, and shipping blind edits. Even smaller models get full architectural clarity, making it compete with goliath models.\n\n---\n\n## Two Ways to Use GitNexus\n\n|                   | **CLI + MCP**                                            | **Web UI**                                             |\n| ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |\n| **What**    | Index repos locally, connect AI agents via MCP                 | Visual graph explorer + AI chat in browser                   |\n| **For**     | Daily development with Cursor, Claude Code, Windsurf, OpenCode | Quick exploration, demos, one-off analysis                   |\n| **Scale**   | Full repos, any size                                           | Limited by browser memory (~5k files)                        |\n| **Install** | `npm install -g gitnexus`                                    | No install \u2014[gitnexus.vercel.app](https://gitnexus.vercel.app) |\n| **Storage** | KuzuDB native (fast, persistent)                               | KuzuDB WASM (in-memory, per session)                         |\n| **Parsing** | Tree-sitter native bindings                                    | Tree-sitter WASM                                             |\n| **Privacy** | Everything local, no network                                   | Everything in-browser, no server                             |\n\n---\n\n## CLI + MCP (recommended)\n\nThe CLI indexes your repository and runs an MCP server that gives AI agents deep codebase awareness.\n\n### Quick Start\n\n```bash\n# Index your repo (run from repo root)\nnpx gitnexus analyze\n```\n\nThat's it. This indexes the codebase, installs agent skills, registers Claude Code hooks, and creates `AGENTS.md` / `CLAUDE.md` context files \u2014 all in one command.\n\nTo configure MCP for your editor, run `npx gitnexus setup` once \u2014 or set it up manually below.\n\n### MCP Setup\n\n`gitnexus setup` auto-detects your editors and writes the correct global MCP config. You only need to run it once.\n\n### Editor Support\n\n| Editor                | MCP | Skills | Hooks (auto-augment) | Support        |\n| --------------------- | --- | ------ | -------------------- | -------------- |\n| **Claude Code** | Yes | Yes    | Yes (PreToolUse)     | **Full** |\n| **Cursor**      | Yes | Yes    | \u2014                   | MCP + Skills   |\n| **Windsurf**    | Yes | \u2014     | \u2014                   | MCP            |\n| **OpenCode**    | Yes | Yes    | \u2014                   | MCP + Skills   |\n\n> **Claude Code** gets the deepest integration: MCP tools + agent skills + PreToolUse hooks that automatically enrich grep/glob/bash calls with knowledge graph context.\n\nIf you prefer manual configuration:\n\n**Claude Code** (full support \u2014 MCP + skills + hooks):\n\n```bash\nclaude mcp add gitnexus -- npx -y gitnexus@latest mcp\n```\n\n**Cursor** (`~/.cursor/mcp.json` \u2014 global, works for all projects):\n\n```json\n{\n  \"mcpServers\": {\n    \"gitnexus\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"gitnexus@latest\", \"mcp\"]\n    }\n  }\n}\n```\n\n**OpenCode** (`~/.config/opencode/config.json`):\n\n```json\n{\n  \"mcp\": {\n    \"gitnexus\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"gitnexus@latest\", \"mcp\"]\n    }\n  }\n}\n```\n\n### CLI Commands\n\n```bash\ngitnexus setup                    # Configure MCP for your editors (one-time)\ngitnexus analyze [path]           # Index a repository (or update stale index)\ngitnexus analyze --force          # Force full re-index\ngitnexus analyze --skip-embeddings  # Skip embedding generation (faster)\ngitnexus mcp                     # Start MCP server (stdio) \u2014 serves all indexed repos\ngitnexus serve                   # Start HTTP server for web UI connection\ngitnexus list                    # List all indexed repositories\ngitnexus status                  # Show index status for current repo\ngitnexus clean                   # Delete index for current repo\ngitnexus clean --all --force     # Delete all indexes\ngitnexus wiki [path]             # Generate repository wiki from knowledge graph\ngitnexus wiki --model <model>    # Wiki with custom LLM model (default: gpt-4o-mini)\ngitnexus wiki --base-url <url>   # Wiki with custom LLM API base URL\n```\n\n### What Your AI Agent Gets\n\n**7 tools** exposed via MCP:\n\n| Tool               | What It Does                                                      | `repo` Param |\n| ------------------ | ----------------------------------------------------------------- | -------------- |\n| `list_repos`     | Discover all indexed repositories                                 | \u2014             |\n| `query`          | Process-grouped hybrid search (BM25 + semantic + RRF)             | Optional       |\n| `context`        | 360-degree symbol view \u2014 categorized refs, process participation | Optional       |\n| `impact`         | Blast radius analysis with depth grouping and confidence          | Optional       |\n| `detect_changes` | Git-diff impact \u2014 maps changed lines to affected processes       | Optional       |\n| `rename`         | Multi-file coordinated rename with graph + text search            | Optional       |\n| `cypher`         | Raw Cypher graph queries                                          | Optional       |\n\n> When only one repo is indexed, the `repo` parameter is optional. With multiple repos, specify which one: `query({query: \"auth\", repo: \"my-app\"})`.\n\n**Resources** for instant context:\n\n| Resource                                  | Purpose                                              |\n| ----------------------------------------- | ---------------------------------------------------- |\n| `gitnexus://repos`                      | List all indexed repositories (read this first)      |\n| `gitnexus://repo/{name}/context`        | Codebase stats, staleness check, and available tools |\n| `gitnexus://repo/{name}/clusters`       | All functional clusters with cohesion scores         |\n| `gitnexus://repo/{name}/cluster/{name}` | Cluster members and details                          |\n| `gitnexus://repo/{name}/processes`      | All execution flows                                  |\n| `gitnexus://repo/{name}/process/{name}` | Full process trace with steps                        |\n| `gitnexus://repo/{name}/schema`         | Graph schema for Cypher queries                      |\n\n**2 MCP prompts** for guided workflows:\n\n| Prompt            | What It Does                                                              |\n| ----------------- | ------------------------------------------------------------------------- |\n| `detect_impact` | Pre-commit change analysis \u2014 scope, affected processes, risk level       |\n| `generate_map`  | Architecture documentation from the knowledge graph with mermaid diagrams |\n\n**4 agent skills** installed to `.claude/skills/` automatically:\n\n- **Exploring** \u2014 Navigate unfamiliar code using the knowledge graph\n- **Debugging** \u2014 Trace bugs through call chains\n- **Impact Analysis** \u2014 Analyze blast radius before changes\n- **Refactoring** \u2014 Plan safe refactors using dependency mapping\n\n---\n\n## Multi-Repo MCP Architecture\n\nGitNexus uses a **global registry** so one MCP server can serve multiple indexed repos. No per-project MCP config needed \u2014 set it up once and it works everywhere.\n\n```mermaid\nflowchart TD\n    subgraph CLI [CLI Commands]\n        Setup[\"gitnexus setup\"]\n        Analyze[\"gitnexus analyze\"]\n        Clean[\"gitnexus clean\"]\n        List[\"gitnexus list\"]\n    end\n\n    subgraph Registry [\"~/.gitnexus/\"]\n        RegFile[\"registry.json\"]\n    end\n\n    subgraph Repos [Project Repos]\n        RepoA[\".gitnexus/ in repo A\"]\n        RepoB[\".gitnexus/ in repo B\"]\n    end\n\n    subgraph MCP [MCP Server]\n        Server[\"server.ts\"]\n        Backend[\"LocalBackend\"]\n        Pool[\"Connection Pool\"]\n        ConnA[\"KuzuDB conn A\"]\n        ConnB[\"KuzuDB conn B\"]\n    end\n\n    Setup -->|\"writes global MCP config\"| CursorConfig[\"~/.cursor/mcp.json\"]\n    Analyze -->|\"registers repo\"| RegFile\n    Analyze -->|\"stores index\"| RepoA\n    Clean -->|\"unregisters repo\"| RegFile\n    List -->|\"reads\"| RegFile\n    Server -->|\"reads registry\"| RegFile\n    Server --> Backend\n    Backend --> Pool\n    Pool -->|\"lazy open\"| ConnA\n    Pool -->|\"lazy open\"| ConnB\n    ConnA -->|\"queries\"| RepoA\n    ConnB -->|\"queries\"| RepoB\n```\n\n**How it works:** Each `gitnexus analyze` stores the index in `.gitnexus/` inside the repo (portable, gitignored) and registers a pointer in `~/.gitnexus/registry.json`. When an AI agent starts, the MCP server reads the registry and can serve any indexed repo. KuzuDB connections are opened lazily on first query and evicted after 5 minutes of inactivity (max 5 concurrent). If only one repo is indexed, the `repo` parameter is optional on all tools \u2014 agents don't need to change anything.\n\n---\n\n## Web UI (browser-based)\n\nA fully client-side graph explorer and AI chat. No server, no install \u2014 your code never leaves the browser.\n\n**Try it now:** [gitnexus.vercel.app](https://gitnexus.vercel.app) \u2014 drag & drop a ZIP and start exploring.\n\n<img width=\"2550\" height=\"1343\" alt=\"gitnexus_img\" src=\"https://github.com/user-attachments/assets/cc5d637d-e0e5-48e6-93ff-5bcfdb929285\" />\n\nOr run locally:\n\n```bash\ngit clone https://github.com/abhigyanpatwari/gitnexus.git\ncd gitnexus/gitnexus-web\nnpm install\nnpm run dev\n```\n\nThe web UI uses the same indexing pipeline as the CLI but runs entirely in WebAssembly (Tree-sitter WASM, KuzuDB WASM, in-browser embeddings). It's great for quick exploration but limited by browser memory for larger repos.\n\n---\n\n## The Problem GitNexus Solves\n\nTools like **Cursor**, **Claude Code**, **Cline**, **Roo Code**, and **Windsurf** are powerful \u2014 but they don't truly know your codebase structure.\n\n**What happens:**\n\n1. AI edits `UserService.validate()`\n2. Doesn't know 47 functions depend on its return type\n3. **Breaking changes ship**\n\n### Traditional Graph RAG vs GitNexus\n\nTraditional approaches give the LLM raw graph edges and hope it explores enough. GitNexus **precomputes structure at index time** \u2014 clustering, tracing, scoring \u2014 so tools return complete context in one call:\n\n```mermaid\nflowchart TB\n    subgraph Traditional[\"Traditional Graph RAG\"]\n        direction TB\n        U1[\"User: What depends on UserService?\"]\n        U1 --> LLM1[\"LLM receives raw graph\"]\n        LLM1 --> Q1[\"Query 1: Find callers\"]\n        Q1 --> Q2[\"Query 2: What files?\"]\n        Q2 --> Q3[\"Query 3: Filter tests?\"]\n        Q3 --> Q4[\"Query 4: High-risk?\"]\n        Q4 --> OUT1[\"Answer after 4+ queries\"]\n    end\n\n    subgraph GN[\"GitNexus Smart Tools\"]\n        direction TB\n        U2[\"User: What depends on UserService?\"]\n        U2 --> TOOL[\"impact UserService upstream\"]\n        TOOL --> PRECOMP[\"Pre-structured response:\n        8 callers, 3 clusters, all 90%+ confidence\"]\n        PRECOMP --> OUT2[\"Complete answer, 1 query\"]\n    end\n```\n\n**Core innovation: Precomputed Relational Intelligence**\n\n- **Reliability** \u2014 LLM can't miss context, it's already in the tool response\n- **Token efficiency** \u2014 No 10-query chains to understand one function\n- **Model democratization** \u2014 Smaller LLMs work because tools do the heavy lifting\n\n---\n\n## How It Works\n\nGitNexus builds a complete knowledge graph of your codebase through a multi-phase indexing pipeline:\n\n1. **Structure** \u2014 Walks the file tree and maps folder/file relationships\n2. **Parsing** \u2014 Extracts functions, classes, methods, and interfaces using Tree-sitter ASTs\n3. **Resolution** \u2014 Resolves imports and function calls across files with language-aware logic\n4. **Clustering** \u2014 Groups related symbols into functional communities\n5. **Processes** \u2014 Traces execution flows from entry points through call chains\n6. **Search** \u2014 Builds hybrid search indexes for fast retrieval\n\n### Supported Languages\n\nTypeScript, JavaScript, Python, Java, C, C++, C#, Go, Rust\n\n---\n\n## Tool Examples\n\n### Impact Analysis\n\n```\nimpact({target: \"UserService\", direction: \"upstream\", minConfidence: 0.8})\n\nTARGET: Class UserService (src/services/user.ts)\n\nUPSTREAM (what depends on this):\n  Depth 1 (WILL BREAK):\n    handleLogin [CALLS 90%] -> src/api/auth.ts:45\n    handleRegister [CALLS 90%] -> src/api/auth.ts:78\n    UserController [CALLS 85%] -> src/controllers/user.ts:12\n  Depth 2 (LIKELY AFFECTED):\n    authRouter [IMPORTS] -> src/routes/auth.ts\n```\n\nOptions: `maxDepth`, `minConfidence`, `relationTypes` (`CALLS`, `IMPORTS`, `EXTENDS`, `IMPLEMENTS`), `includeTests`\n\n### Process-Grouped Search\n\n```\nquery({query: \"authentication middleware\"})\n\nprocesses:\n  - summary: \"LoginFlow\"\n    priority: 0.042\n    symbol_count: 4\n    process_type: cross_community\n    step_count: 7\n\nprocess_symbols:\n  - name: validateUser\n    type: Function\n    filePath: src/auth/validate.ts\n    process_id: proc_login\n    step_index: 2\n\ndefinitions:\n  - name: AuthConfig\n    type: Interface\n    filePath: src/types/auth.ts\n```\n\n### Context (360-degree Symbol View)\n\n```\ncontext({name: \"validateUser\"})\n\nsymbol:\n  uid: \"Function:validateUser\"\n  kind: Function\n  filePath: src/auth/validate.ts\n  startLine: 15\n\nincoming:\n  calls: [handleLogin, handleRegister, UserController]\n  imports: [authRouter]\n\noutgoing:\n  calls: [checkPassword, createSession]\n\nprocesses:\n  - name: LoginFlow (step 2/7)\n  - name: RegistrationFlow (step 3/5)\n```\n\n### Detect Changes (Pre-Commit)\n\n```\ndetect_changes({scope: \"all\"})\n\nsummary:\n  changed_count: 12\n  affected_count: 3\n  changed_files: 4\n  risk_level: medium\n\nchanged_symbols: [validateUser, AuthService, ...]\naffected_processes: [LoginFlow, RegistrationFlow, ...]\n```\n\n### Rename (Multi-File)\n\n```\nrename({symbol_name: \"validateUser\", new_name: \"verifyUser\", dry_run: true})\n\nstatus: success\nfiles_affected: 5\ntotal_edits: 8\ngraph_edits: 6     (high confidence)\ntext_search_edits: 2  (review carefully)\nchanges: [...]\n```\n\n### Cypher Queries\n\n```cypher\n-- Find what calls auth functions with high confidence\nMATCH (c:Community {heuristicLabel: 'Authentication'})<-[:CodeRelation {type: 'MEMBER_OF'}]-(fn)\nMATCH (caller)-[r:CodeRelation {type: 'CALLS'}]->(fn)\nWHERE r.confidence > 0.8\nRETURN caller.name, fn.name, r.confidence\nORDER BY r.confidence DESC\n```\n\n---\n\n## Wiki Generation\n\nGenerate LLM-powered documentation from your knowledge graph:\n\n```bash\n# Requires an LLM API key (OPENAI_API_KEY, etc.)\ngitnexus wiki\n\n# Use a custom model or provider\ngitnexus wiki --model gpt-4o\ngitnexus wiki --base-url https://api.anthropic.com/v1\n\n# Force full regeneration\ngitnexus wiki --force\n```\n\nThe wiki generator reads the indexed graph structure, groups files into modules via LLM, generates per-module documentation pages, and creates an overview page \u2014 all with cross-references to the knowledge graph.\n\n---\n\n## Tech Stack\n\n| Layer                     | CLI                                   | Web                                     |\n| ------------------------- | ------------------------------------- | --------------------------------------- |\n| **Runtime**         | Node.js (native)                      | Browser (WASM)                          |\n| **Parsing**         | Tree-sitter native bindings           | Tree-sitter WASM                        |\n| **Database**        | KuzuDB native                         | KuzuDB WASM                             |\n| **Embeddings**      | HuggingFace transformers.js (GPU/CPU) | transformers.js (WebGPU/WASM)           |\n| **Search**          | BM25 + semantic + RRF                 | BM25 + semantic + RRF                   |\n| **Agent Interface** | MCP (stdio)                           | LangChain ReAct agent                   |\n| **Visualization**   | \u2014                                    | Sigma.js + Graphology (WebGL)           |\n| **Frontend**        | \u2014                                    | React 18, TypeScript, Vite, Tailwind v4 |\n| **Clustering**      | Graphology                            | Graphology                              |\n| **Concurrency**     | Worker threads + async                | Web Workers + Comlink                   |\n\n---\n\n## Roadmap\n\n### Actively Building\n\n- [ ] **LLM Cluster Enrichment** \u2014 Semantic cluster names via LLM API\n- [ ] **AST Decorator Detection** \u2014 Parse @Controller, @Get, etc.\n- [ ] **Incremental Indexing** \u2014 Only re-index changed files\n\n### Recently Completed\n\n- [X] Wiki Generation, Multi-File Rename, Git-Diff Impact Analysis\n- [X] Process-Grouped Search, 360-Degree Context, Claude Code Hooks\n- [X] Multi-Repo MCP, Zero-Config Setup, 9 Language Support\n- [X] Community Detection, Process Detection, Confidence Scoring\n- [X] Hybrid Search, Vector Index\n\n---\n\n## Security & Privacy\n\n- **CLI**: Everything runs locally on your machine. No network calls. Index stored in `.gitnexus/` (gitignored). Global registry at `~/.gitnexus/` stores only paths and metadata.\n- **Web**: Everything runs in your browser. No code uploaded to any server. API keys stored in localStorage only.\n- Open source \u2014 audit the code yourself.\n\n---\n\n## Acknowledgments\n\n- [Tree-sitter](https://tree-sitter.github.io/) \u2014 AST parsing\n- [KuzuDB](https://kuzudb.com/) \u2014 Embedded graph database with vector support\n- [Sigma.js](https://www.sigmajs.org/) \u2014 WebGL graph rendering\n- [transformers.js](https://huggingface.co/docs/transformers.js) \u2014 Browser ML\n- [Graphology](https://graphology.github.io/) \u2014 Graph data structures\n- [MCP](https://modelcontextprotocol.io/) \u2014 Model Context Protocol\n"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/chat",
+        "status": 200,
+        "time_ms": 12737.41,
+        "response": {
+            "chat_id": "5a0c66b7-2020-4f6e-a028-845a5ea30daa",
+            "reply": "This repository appears to be a toolset designed for analyzing and interacting with indexed code repositories, likely within a software development or DevOps context. The tools provided in this repository facilitate various operations related to codebase exploration, impact analysis, and change detection. Below is a breakdown of the key components and functionalities:\n\n### Tools Overview\n\n1. **`list_repos`**:\n   - **Functionality**: This tool allows users to discover all indexed repositories. It does not require any parameters.\n   - **Use Case**: Useful for getting an overview of all available code repositories in the system.\n\n2. **`query`**:\n   - **Functionality**: This tool performs a hybrid search that combines BM25 (a ranking function used by search engines) with semantic search and Reciprocal Rank Fusion (RRF). The `repo` parameter is optional.\n   - **Use Case**: Ideal for searching through codebases for specific terms or symbols, especially when dealing with multiple repositories.\n\n3. **`context`**:\n   - **Functionality**: Provides a 360-degree view of symbols, categorized references, and process participation. The `repo` parameter is optional.\n   - **Use Case**: Helps developers understand the context of specific symbols or functions within the codebase, including how they are used across different processes.\n\n4. **`impact`**:\n   - **Functionality**: Conducts blast radius analysis, which assesses the potential impact of changes in the codebase, with depth grouping and confidence scoring. The `repo` parameter is optional.\n   - **Use Case**: Useful for understanding the consequences of code changes, especially in large and complex systems.\n\n5. **`detect_changes`**:\n   - **Functionality**: Analyzes Git diffs to map changed lines of code to affected processes. The `repo` parameter is optional.\n   - **Use Case**: Helps in identifying which parts of the system are impacted by recent code changes, facilitating better code review and testing processes.\n\n### Repository Parameter (`repo`)\n\n- The `repo` parameter is optional when there is only one indexed repository. However, when multiple repositories are indexed, it must be specified to indicate which repository the operation should target. For example, you would use `query({query: \"auth\", repo: \"my-app\"})` to search for the term \"auth\" specifically in the \"my-app\" repository.\n\n### Resources for Instant Context\n\nThe repository also provides several resources that can be accessed via specific URLs, which serve various purposes:\n\n- **`gitnexus://repos`**: Lists all indexed repositories.\n- **`gitnexus://repo/{name}/context`**: Provides codebase statistics, staleness checks, and available tools for a specific repository.\n- **`gitnexus://repo/{name}/clusters`**: Lists all functional clusters within a repository along with their cohesion scores.\n- **`gitnexus://repo/{name}/cluster/{name}`**: Details about members of a specific cluster.\n- **`gitnexus://repo/{name}/processes`**: Lists all execution flows within a repository.\n- **`gitnexus://repo/{name}/process/{name}`**: Provides a full trace of a specific process with detailed steps.\n- **`gitnexus://repo/{name}/schema`**: Offers the graph schema for Cypher queries, which can be useful for advanced querying.\n\n### Conclusion\n\nThis repository is a powerful tool for developers and teams looking to gain insights into their codebases, understand the impact of changes, and efficiently search through their repositories. The combination of search capabilities, context views, impact analysis, and change detection makes it a comprehensive solution for modern software development practices.",
+            "tokens_used": null,
+            "sources": [],
+            "created_at": "2026-02-22T07:26:48.234712Z"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/issues/chat",
+        "status": 200,
+        "time_ms": 2406.9,
+        "response": {
+            "chat_id": "38e7de68-a5eb-4a0b-b773-b97663a57eb6",
+            "reply": "Found 11 matching issues:\n\ud83d\udfe2 #40 Unsupported CUDA version (2026-02-21)\n\ud83d\udfe2 #43 Encountered tool calling issues while using DeepSeek. (2026-02-22)\n\ud83d\udfe2 #42 analyze error (2026-02-21)\n\ud83d\udfe2 #41 Ask an open-ended question (2026-02-21)\n\ud83d\udfe2 #38 zsh: segmentation fault  npx gitnexus analyze (2026-02-20)\n\ud83d\udfe2 #37 Setup bugs or me? (2026-02-19)\n\ud83d\udfe3 #29 Add Licence to project (2026-01-19)\n\ud83d\udfe2 #32 Wrong number of files (2026-01-26)\n\ud83d\udfe2 #30 Symlinked directories show up duplicate nodes in the graph (2026-01-20)\n\ud83d\udfe3 #1 Add support for Ollama as a local inference backend (2025-08-31)\n\ud83d\udfe3 #15 The packages folder is being ignored, but it\u2019s actually part of the core project. (2026-01-10)",
+            "sources": [],
+            "tokens_used": 0,
+            "created_at": "2026-02-22T07:26:50.674264Z"
+        },
+        "error": null
+    },
+    {
+        "method": "POST",
+        "endpoint": "/pull-requests/chat",
+        "status": 200,
+        "time_ms": 2038.08,
+        "response": {
+            "chat_id": "0c347699-5c54-471f-8eb2-dfa274b6483f",
+            "reply": "Found 31 matching PRs:\n\ud83d\udfe2 #39 feat: add 3D graph visualization with PlayCanvas engine (2026-02-21)\n\ud83d\udfe3 #36 Gitnexus cli (2026-02-17)\n\ud83d\udfe3 #35 updated readme (2026-01-29)\n\ud83d\udfe3 #34 Leidens algorithm and processmap (2026-01-28)\n\ud83d\udfe3 #33 Leidens algorithm and processmap (2026-01-27)\n\ud83d\udfe3 #31 Leidens algorithm and processmap (2026-01-23)\n\ud83d\udfe3 #28 Mcp bridge (2026-01-19)\n\ud83d\udfe2 #27 Add database indexes for query performance optimization (2026-01-15)\n\ud83d\udfe3 #26 readme mermain fix (2026-01-15)\n\ud83d\udfe3 #25 blast radius tool implemented (2026-01-14)\n\ud83d\udfe3 #24 Schema experiments (2026-01-12)\n\ud83d\udfe3 #23 minor change in readme (2026-01-12)\n\ud83d\udfe3 #22 readme updated (2026-01-12)\n\ud83d\udfe3 #21 fixed settings icon and added openai provider support (2026-01-12)\n\ud83d\udfe3 #20 Agent and UI improvements (2026-01-12)\n\ud83d\udfe3 #19 better regex for grounding, UI improvements (2026-01-11)\n\ud83d\udfe3 #18 Agent UI improved. Prompt injected with repo directory structure, hot\u2026 (2026-01-11)\n\ud83d\udfe3 #17 Minor prompt fix (2026-01-11)\n\ud83d\udfe3 #16 Schema experiments (2026-01-11)\n\ud83d\udfe3 #14 prompt changes (2026-01-10)\n... and 11 more.",
+            "sources": [],
+            "tokens_used": 0,
+            "created_at": "2026-02-22T07:26:52.706751Z"
+        },
+        "error": null
+    },
+    {
+        "method": "GET",
+        "endpoint": "/api-keys",
+        "status": 200,
+        "time_ms": 868.66,
+        "response": [
+            {
+                "key_id": "a812b2dc-17ae-4586-acd9-b465d2076261",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            },
+            {
+                "key_id": "0e4494df-5165-4745-a294-8d585aa4b290",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            },
+            {
+                "key_id": "ff337eda-d09e-4636-b167-580f44980740",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            },
+            {
+                "key_id": "0d3dc52d-5d1b-4693-b1bb-d213f331de48",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            },
+            {
+                "key_id": "bb4178bf-968d-4152-9766-dfe213ae1efa",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            },
+            {
+                "key_id": "fb7b2870-e1d5-4bef-8e45-c2556a3a575b",
+                "name": "prod-key",
+                "environment": "prod",
+                "scopes": [
+                    "repo:read",
+                    "repo:explain",
+                    "issues:chat"
+                ],
+                "last_used_at": null
+            }
+        ],
+        "error": null
+    },
+    {
+        "method": "GET",
+        "endpoint": "/manage-keys",
+        "status": 200,
+        "time_ms": 1657.88,
+        "response": {
+            "user_email": "testuser@example.com",
+            "keys": [
+                {
+                    "api_key_id": "a812b2dc-17ae-4586-acd9-b465d2076261",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T06:55:18.930869",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 8,
+                        "error_count": 1
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/pull-requests/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 3930,
+                            "created_at": "2026-02-22T07:25:15.729269+00:00",
+                            "request_id": "e21bd22f-6416-4a02-87d1-17d4c6e40682",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/pull-requests/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 3664,
+                            "created_at": "2026-02-22T07:14:55.263008+00:00",
+                            "request_id": "8afb06c2-afa5-45ae-a7b8-1ffff4d24875",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/pull-requests/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 5423,
+                            "created_at": "2026-02-22T07:14:28.874096+00:00",
+                            "request_id": "17e628b6-54fd-480b-9664-c6285c8ca4b8",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 3209,
+                            "created_at": "2026-02-22T07:14:00.52499+00:00",
+                            "request_id": "e9f638a6-f85c-44e1-88a8-f64bd3a197b4",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 500,
+                            "duration_ms": 1469,
+                            "created_at": "2026-02-22T07:13:36.224329+00:00",
+                            "request_id": "4f280194-a09e-4d2d-94be-18d8d6d86757",
+                            "error_message": "404 Client Error: Not Found for url: https://api.github.com/repos/vxcontrol/pentagi/issues/21057"
+                        },
+                        {
+                            "endpoint": "/pull-requests/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 1999,
+                            "created_at": "2026-02-22T07:13:16.098115+00:00",
+                            "request_id": "c9032f34-a9e9-470e-a288-8c5e6454f237",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 23906,
+                            "created_at": "2026-02-22T07:12:56.980794+00:00",
+                            "request_id": "00a568a1-2169-4c6d-b5b3-c4762123e897",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 15446,
+                            "created_at": "2026-02-22T06:55:50.193579+00:00",
+                            "request_id": "436df751-ccec-4aa7-a3e8-603b8491dcb5",
+                            "error_message": null
+                        }
+                    ]
+                },
+                {
+                    "api_key_id": "0e4494df-5165-4745-a294-8d585aa4b290",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T07:19:10.284141",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 2,
+                        "error_count": 0
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 12305,
+                            "created_at": "2026-02-22T07:19:33.520741+00:00",
+                            "request_id": "07a446c4-e43c-465b-8202-23acbf850ece",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 8577,
+                            "created_at": "2026-02-22T07:19:21.030018+00:00",
+                            "request_id": "5e13b326-d0cf-4d72-baf1-906abecdc49f",
+                            "error_message": null
+                        }
+                    ]
+                },
+                {
+                    "api_key_id": "ff337eda-d09e-4636-b167-580f44980740",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T07:21:58.389978",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 2,
+                        "error_count": 0
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 14730,
+                            "created_at": "2026-02-22T07:22:32.381496+00:00",
+                            "request_id": "970479f2-8c16-432d-9c07-fda330234197",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 16951,
+                            "created_at": "2026-02-22T07:22:17.449592+00:00",
+                            "request_id": "00864929-68cb-4441-8430-b24db88de50b",
+                            "error_message": null
+                        }
+                    ]
+                },
+                {
+                    "api_key_id": "0d3dc52d-5d1b-4693-b1bb-d213f331de48",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T07:23:55.834849",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 2,
+                        "error_count": 0
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 2046,
+                            "created_at": "2026-02-22T07:24:19.596723+00:00",
+                            "request_id": "c54f1818-893d-409c-b38a-fc5241346f7e",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 18946,
+                            "created_at": "2026-02-22T07:24:17.373116+00:00",
+                            "request_id": "851684c8-4a83-4a26-9b8e-e91fd76fd38b",
+                            "error_message": null
+                        }
+                    ]
+                },
+                {
+                    "api_key_id": "bb4178bf-968d-4152-9766-dfe213ae1efa",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T07:25:36.595781",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 2,
+                        "error_count": 0
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 2164,
+                            "created_at": "2026-02-22T07:25:59.064747+00:00",
+                            "request_id": "5943f206-3a90-450c-948d-7d178e3d9b0d",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 17910,
+                            "created_at": "2026-02-22T07:25:56.732796+00:00",
+                            "request_id": "13d64b6a-9788-4a3d-a87e-4b680ad22a0e",
+                            "error_message": null
+                        }
+                    ]
+                },
+                {
+                    "api_key_id": "fb7b2870-e1d5-4bef-8e45-c2556a3a575b",
+                    "name": "prod-key",
+                    "status": "active",
+                    "created_at": "2026-02-22T07:26:33.130443",
+                    "last_used_at": null,
+                    "usage": {
+                        "total_requests": 4,
+                        "error_count": 0
+                    },
+                    "logs": [
+                        {
+                            "endpoint": "/api-keys",
+                            "method": "GET",
+                            "status_code": 200,
+                            "duration_ms": 706,
+                            "created_at": "2026-02-22T07:26:52.978202+00:00",
+                            "request_id": "08beecbd-1f95-4346-8f92-a7fc44690578",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/pull-requests/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 1883,
+                            "created_at": "2026-02-22T07:26:52.107317+00:00",
+                            "request_id": "02d176f0-16f2-4e73-bf33-1afcc0c56347",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/issues/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 2250,
+                            "created_at": "2026-02-22T07:26:50.066279+00:00",
+                            "request_id": "0d8ce00f-0693-46c3-9cfc-41cd2bdb5a4a",
+                            "error_message": null
+                        },
+                        {
+                            "endpoint": "/chat",
+                            "method": "POST",
+                            "status_code": 200,
+                            "duration_ms": 12551,
+                            "created_at": "2026-02-22T07:26:47.643131+00:00",
+                            "request_id": "b73c2df7-c4e3-4aac-94f7-4c6245bbc7f2",
+                            "error_message": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "error": null
+    }
+]
