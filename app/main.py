@@ -5,7 +5,7 @@ import logging
 
 from app.middleware.request_logger import RequestLoggingMiddleware
 from app.core.exceptions import global_exception_handler
-from app.routers import health, repos, chat, api_keys, credentials, workflows, agent
+from app.routers import health, repos, chat, api_keys, credentials, workflows, agent, search
 
 load_dotenv()
 
@@ -29,3 +29,5 @@ app.include_router(credentials.router)
 app.include_router(workflows.router)
 app.include_router(health.router)
 app.include_router(agent.router)
+
+app.include_router(search.router)
