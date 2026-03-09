@@ -1,0 +1,83 @@
+import os
+import git
+import logging
+from app.services.repo_index import build_repo_manifest
+
+SUPPORTED_EXT = [".py", ".md", ".txt"]
+
+logger = logging.getLogger("repo_indexing")
+logger.setLevel(logging.INFO)
+
+def clone_repo(repo_url: str, target_dir="repos"):
+    os.makedirs(target_dir, exist_ok=True)
+    repo_name = repo_url.split("/")[-1].replace(".git", "")
+    repo_path = os.path.join(target_dir, repo_name)
+
+    if not os.path.exists(repo_path):
+        git.Repo.clone_from(repo_url, repo_path)
+
+    return repo_path
+
+
+def read_repo_files(repo_path: str):
+    documents = []
+
+    # === ADDED ===
+    files_to_process = []
+    for root, _, files in os.walk(repo_path):
+        for file in files:
+            if any(file.endswith(ext) for ext in SUPPORTED_EXT):
+                files_to_process.append(os.path.join(root, file))
+
+    total_files = len(files_to_process)
+    # =============
+
+    # === MODIFIED ===
+    for i, full_path in enumerate(files_to_process, start=1):
+        try:
+            with open(full_path, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
+
+            documents.append({
+                "text": content,
+                "metadata": {
+                    "file": os.path.relpath(full_path, repo_path)
+                }
+            })
+
+        except:
+            pass
+
+        # === ADDED ===
+        percent = int((i / total_files) * 100) if total_files > 0 else 0
+        logger.info(f"[Indexing] {i}/{total_files} files processed ({percent}%)")
+        # =============
+
+    manifest = build_repo_manifest(repo_path)
+    return documents, manifest
+
+def clone_private_repo(repo_url: str, github_token: str, target_dir="repos"):
+    """
+    Clone a private GitHub repo using a per-request token.
+    Token is NOT stored.
+    """
+    os.makedirs(target_dir, exist_ok=True)
+
+    repo_name = repo_url.split("/")[-1].replace(".git", "")
+    repo_path = os.path.join(target_dir, repo_name)
+
+    # Inject token into clone URL
+    auth_url = repo_url.replace(
+        "https://",
+        f"https://{github_token}@"
+    )
+
+    # Always replace repo (as per your requirement)
+    if os.path.exists(repo_path):
+        import shutil
+        shutil.rmtree(repo_path)
+
+    git.Repo.clone_from(auth_url, repo_path)
+
+    return repo_path
+

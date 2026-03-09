@@ -1,0 +1,17 @@
+cryptography==46.0.5
+faiss-cpu==1.13.2
+fastapi==0.129.0
+azure-functions==1.22.1
+GitPython==3.1.46
+langchain_community==0.4.1
+langchain_core==1.2.14
+langchain_openai==1.1.10
+langchain_text_splitters==1.1.1
+pinecone==8.1.0
+pydantic==2.12.5
+python-dotenv==1.2.1
+python-dateutil==2.9.0.post0
+pytz==2024.2
+requests==2.32.5
+supabase==2.28.0
+uvicorn==0.41.0
